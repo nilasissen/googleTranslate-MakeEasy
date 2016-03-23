@@ -1,0 +1,15 @@
+// failed:   CANCEL                       : 'Cancel',
+
+  DONE                         :"Hecho",
+// failed:   SAVE                         : 'Save',
+
+  HOME                         :"CASA",
+  HOW_IT_WORKS                 :"CÓMO FUNCIONA",
+  FEATURES                     :"CARACTERISTICAS",
+  ABOUT_US                     :"Sobre nosotros",
+  SIGN_IN                      :"REGISTRARSE",
+  SIGN_UP                      :"REGÍSTRATE",
+  BE_READY_WITH_YOUR_DOCUMENTS :"Esté preparado con SUS DOCUMENTOS",
+  ALWAYS                       :"¡SIEMPRE!",
+  Forgot_your_password         :"¿Olvidaste tu contraseña?",
+  Reset_Password               :"Restablecer la contraseña",

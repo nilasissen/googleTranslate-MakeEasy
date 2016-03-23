@@ -1,0 +1,7 @@
+# by lazycoder 
+#gtrans can translate iphone strings file
+#the only thing you need to do is give the path of iphones string file 
+#the output show on terminal is not provided once it will translate the program will stop executing and you can see the output file call tr.txts
+
+#the gtrans can be used for tranlation of web projects also
+the format for web translation is provided as eng.txt-- which follow a javascript key,value file formats
