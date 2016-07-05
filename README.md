@@ -10,3 +10,6 @@ you need to give the source string file and change the program to "i"  then it w
 
 for web you need to change it to "w",i was translating my angularjs application so i used javascripts key,value format it will take that format 
 for example you can see the read.txt
+#Android
+
+for android you need to change the format to "A" .
