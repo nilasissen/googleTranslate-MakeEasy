@@ -5,3 +5,5 @@
 
 #the gtrans can be used for tranlation of web projects also
 the format for web translation is provided as eng.txt-- which follow a javascript key,value file formats
+
+#Android support added

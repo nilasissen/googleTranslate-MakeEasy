@@ -9,7 +9,9 @@ dstl = "es" #destination language
 
 srcf = "./eng.txt" #the source language strings
 dstf = "./tr.txt" #the destination language strings
-format = "w" # "w" is for web which is javascript base key,value example for translations(see example input text file) or  "i" is for iphone translations STRINGS file
+format = "A" # "w" is for web which is javascript base key,value example for translations(see example input text file) or  "i" is for iphone translations STRINGS file and A for 
+# Android string.xml file
+#Android input <string name="username">Username</string>
 
 # srcf = "./ip"
 # dstf = "./Localizable.strings" + "_" + dstl
@@ -43,8 +45,11 @@ if __name__ == '__main__':
                 if format == "i" :
                     txt = i.split("=", 1)[0]
                     txtClean = txt.strip().replace("'","").replace('"', '').rstrip(";")
+                if format == "A" :
+                    key = i.split("=",1)[1].replace('"',"").split(">",1)[0]
+                    txtClean = i.split("=",1)[1].replace('"',"").split(">",1)[1].split("<",1)[0]
 
-                # print( "Text: " + txt )
+                print( "Text: " + txtClean )
 
                 if(txtClean) :
                     tr_txt = translate(txtClean)
@@ -57,7 +62,9 @@ if __name__ == '__main__':
                     if format == "i" :
                         rept = i.split("=", 1)[1]
                         j = i.replace(rept, '"' + tr_txt + '";')
-
+                    if format == "A" :
+                        rept = i.split("=",1)[1].replace('"',"").split(">",1)[0]
+                        j = i.replace(rept, '"' + tr_txt + '";')
                     g.writelines(j + "\n")
             except :
                 g.writelines("// failed: " + i + "\n")
